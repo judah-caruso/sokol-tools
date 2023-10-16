@@ -333,6 +333,7 @@ follows:
     - **bare_yaml**: like bare, but also creates a YAML file with shader reflection information.
     - **sokol_zig**: generates output for the [sokol-zig bindings](https://github.com/floooh/sokol-zig/)
     - **sokol_odin**: generates output for the [sokol-odin bindings](https://github.com/floooh/sokol-odin)
+    - **sokol_jai**: generates output for the [sokol-jai bindings](https://github.com/judah-caruso/jai-sokol)
     - **sokol_nim**: generates output for the [sokol-nim bindings](https://github.com/floooh/sokol-nim)
     - **sokol_rust**: generates output for the [sokol-rust bindings](https://github.com/floooh/sokol-rust)
 

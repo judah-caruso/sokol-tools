@@ -120,6 +120,9 @@ int main(int argc, const char** argv) {
         case format_t::SOKOL_ODIN:
             output_err = sokolodin_t::gen(args, inp, spirvcross, bytecode);
             break;
+        case format_t::SOKOL_JAI:
+            output_err = sokoljai_t::gen(args, inp, spirvcross, bytecode);
+            break;
         case format_t::SOKOL_RUST:
             output_err = sokolrust_t::gen(args, inp, spirvcross, bytecode);
             break;

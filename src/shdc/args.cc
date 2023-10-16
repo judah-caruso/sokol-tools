@@ -93,6 +93,7 @@ static void print_help_string(getopt_context_t& ctx) {
         "  - sokol_zig:     Zig module file\n"
         "  - sokol_nim:     Nim module file\n"
         "  - sokol_odin:    Odin module file\n"
+        "  - sokol_jai:     Jai module file\n"
         "  - sokol_rust:    Rust module file\n"
         "  - bare:          raw output of SPIRV-Cross compiler, in text or binary format\n"
         "  - bare_yaml:     like bare, but with reflection file in YAML format\n\n"
@@ -221,7 +222,7 @@ args_t args_t::parse(int argc, const char** argv) {
                 case OPTION_FORMAT:
                     args.output_format = format_t::from_str(ctx.current_opt_arg);
                     if (args.output_format == format_t::INVALID) {
-                        fmt::print(stderr, "sokol-shdc: unknown output format {}, must be [sokol|sokol_decl|sokol_impl|sokol_zig|sokol_nim|sokol_odin|bare]\n", ctx.current_opt_arg);
+                        fmt::print(stderr, "sokol-shdc: unknown output format {}, must be [sokol|sokol_decl|sokol_impl|sokol_zig|sokol_nim|sokol_odin|sokol_jai|bare]\n", ctx.current_opt_arg);
                         args.valid = false;
                         args.exit_code = 10;
                         return args;
